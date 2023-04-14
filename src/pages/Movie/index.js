@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import api from '../../services/api';
 import './movie-info.css'
 
@@ -8,6 +8,8 @@ import './movie-info.css'
 
 function Movie() {
   const { id } = useParams();
+  const navigate = useNavigate();
+
   const [movie, setMovie] = useState({});
   const [loading, setLoading] = useState(true);
 
@@ -21,19 +23,38 @@ function Movie() {
         },
       })
       .then((response) => {
-          setMovie(response.data)
-          setLoading(false)
+          setMovie(response.data);
+          setLoading(false);
       })
       .catch(() => {
-        console.log("Filme nao encontado");
+        console.log("Filme não encontrado");
+        navigate("/", {replace: true});
       })
     }
     loadMovie()
 
     return () => {
-      console.log("Componente desmontado")
+      console.log("Componente desmontado");
     }
-  }, [])
+  }, [id, navigate])
+
+  function saveMovie() {
+    const myList = localStorage.getItem("@reactmovies");
+
+    let savedMovies = JSON.parse(myList) || [];
+
+    const hasMovie = savedMovies.some( ( savedMovie ) => savedMovie.id === movie.id);
+
+    if(hasMovie) {
+      alert("Filme ja foi salvo");
+      return;
+    }
+
+    savedMovies.push(movie)
+    localStorage.setItem("@reactmovies", JSON.stringify(savedMovies))
+    alert("Filme salvo com sucesso")
+
+  }
 
   if(loading) {
     return(
@@ -53,15 +74,15 @@ function Movie() {
       <h3>Sinopse</h3>
       <span>{movie.overview}</span>
 
+      <strong> Genero: {movie.genres[0].name}</strong>
       <strong>Avaliação: {movie.vote_average}/10</strong>
 
-      <div className='area-buttons'>
-        <button>Salvar</button>
+      <div className="area-buttons">
+        <button onClick={saveMovie}>Salvar</button>
         <button>
-          <a href='#'>Trailer</a>
+          <a href={`https://youtube.com/results?search_query=Trailer+${movie.title}`} target='blank' rel='external'>Trailer</a>
         </button>
       </div>
-
     </div>
   );
 }
