@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Movie from "./pages/Movie";
-import Erro from "./pages/Erro/erro";
+import Erro from "./pages/Erro";
 
 import Header from "./components/Header";
 

@@ -6,7 +6,7 @@ import './home.css'
 //https://api.themoviedb.org/3/movie/now_playing?api_key=e230d70de46c8bc751c0436148455bde
 
 function Home() {
-    const [filmes, setFilmes] = useState([]);
+    const [movies, setMovies] = useState([]);
     const [loading, setLoading] = useState(true)
 
     useEffect(()=>{
@@ -19,7 +19,7 @@ function Home() {
               },
             })
 
-            setFilmes(response.data.results.slice(0, 10));
+            setMovies(response.data.results.slice(0, 10));
             setLoading(false)
         }
 
@@ -36,21 +36,24 @@ function Home() {
         )
     }
 
-    return(
-        <div className="Container">
-            <div className="lista-filmes">
-                {filmes.map((filme) => {
-                    return (
-                      <article key={filme.id}>
-                        <strong>{filme.title}</strong>
-                        <img src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} alt={filme.title}  />
-                        <Link to={`/filmes/${filme.id}`}>Acessar</Link>
-                      </article>
-                    );
-                })}
-            </div>
+    return (
+      <div className="Container">
+        <div className="lista-filmes">
+          {movies.map((movie) => {
+            return (
+              <article key={movie.id}>
+                <strong>{movie.title}</strong>
+                <img
+                  src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}
+                  alt={movie.title}
+                />
+                <Link to={`/movie/${movie.id}`}>Acessar</Link>
+              </article>
+            );
+          })}
         </div>
-    )
+      </div>
+    );
 }
 
 export default Home;
