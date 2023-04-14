@@ -1,3 +1,10 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
 .lista-filmes{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
