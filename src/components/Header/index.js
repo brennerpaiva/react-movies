@@ -4,8 +4,10 @@ import './header.css';
 function Header() {
     return(
         <header>
-            <Link className='logo' to="/">React Movies</Link>
-            <Link className='favorites' to='/favorites'>Meus Filmes</Link>
+            <div className='max-width'>
+                <Link className='logo' to="/">React Movies</Link>
+                <Link className='favorites' to='/favorites'>Meus Filmes</Link>
+            </div>
         </header>
     )
 }

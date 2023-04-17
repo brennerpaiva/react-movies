@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from "react-toastify";
 import api from '../../services/api';
-import './movie-info.css'
+import './movie-info.css';
 
 // https://api.themoviedb.org/3/movie/585245?api_key=e230d70de46c8bc751c0436148455bde
 
@@ -46,13 +47,13 @@ function Movie() {
     const hasMovie = savedMovies.some( ( savedMovie ) => savedMovie.id === movie.id);
 
     if(hasMovie) {
-      alert("Filme ja foi salvo");
+      toast.warn("Esse filme já está na sua lista!");
       return;
     }
 
     savedMovies.push(movie)
     localStorage.setItem("@reactmovies", JSON.stringify(savedMovies))
-    alert("Filme salvo com sucesso")
+    toast.success("Filme salvo com sucesso!")
 
   }
 
