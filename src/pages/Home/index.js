@@ -5,6 +5,7 @@ import './home.css'
 
 //https://api.themoviedb.org/3/movie/now_playing?api_key=e230d70de46c8bc751c0436148455bde
 
+
 function Home() {
     const [movies, setMovies] = useState([]);
     const [loading, setLoading] = useState(true)
@@ -19,7 +20,7 @@ function Home() {
               },
             })
 
-            setMovies(response.data.results.slice(0, 10));
+            setMovies(response.data.results.slice(0, 20));
             setLoading(false)
         }
 
@@ -27,7 +28,7 @@ function Home() {
         
     }, [])
 
-
+  
     if(loading){
         return(
             <div className="loading">
@@ -36,8 +37,20 @@ function Home() {
         )
     }
 
+
+
     return (
       <div className="Container">
+        <div className="search">
+          <input
+            placeholder="Pesquise um filme"
+            
+            type="text"
+          ></input>
+          <button type="submit">
+            enviar
+          </button>
+        </div>
         <div className="lista-filmes">
           {movies.map((movie) => {
             return (

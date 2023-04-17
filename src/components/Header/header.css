@@ -8,7 +8,10 @@ header {
 }
 
 .max-width {
-    
+    width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .logo {
