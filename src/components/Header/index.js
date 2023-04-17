@@ -5,7 +5,7 @@ function Header() {
     return(
         <header>
             <Link className='logo' to="/">React Movies</Link>
-            <Link className='favoritos' to='/favoritos'>Meus Filmes</Link>
+            <Link className='favorites' to='/favorites'>Meus Filmes</Link>
         </header>
     )
 }
