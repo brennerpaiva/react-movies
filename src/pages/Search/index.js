@@ -16,7 +16,6 @@ function Search() {
   //https://api.themoviedb.org/3/search/movie?api_key=e230d70de46c8bc751c0436148455bde&language=pt-BR&query=vizinhos&page=1
 
   useEffect(() => {
-
     async function searchMovies() {
       const response = await api.get("search/movie", {
         params: {
@@ -32,7 +31,7 @@ function Search() {
     }
 
     searchMovies();
-  }, []);
+  }, [query]);
 
   if (loading) {
     return (
@@ -43,8 +42,7 @@ function Search() {
   }
 
   return (
-    <div className="Container">
-      <h1>search</h1>
+    <div className="container">
       <div className="lista-filmes">
         {movies.map((movie) => {
           return (

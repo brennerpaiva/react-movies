@@ -27,14 +27,19 @@ function Header() {
         <Link className="logo" to="/">
           React Movies
         </Link>
-        <input
-          id="meu-input"
-          type="text"
-          value={valorInput}
-          onChange={handleChange}
-        />
-        <button onClick={handleClick}>Enviar</button>
-        
+        <div className="search">
+          <input
+            id="meu-input"
+            type="text"
+            value={valorInput}
+            onChange={handleChange}
+            placeholder="Pesquise por um filme"
+          />
+          <button onClick={handleClick}>
+            <ion-icon name="search"></ion-icon>
+          </button>
+        </div>
+
         <Link className="favorites" to="/favorites">
           Meus Filmes
         </Link>

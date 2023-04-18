@@ -40,16 +40,10 @@ function Home() {
 
 
     return (
-      <div className="Container">
-        <div className="search">
-          <input
-            placeholder="Pesquise um filme"
-            
-            type="text"
-          ></input>
-          <button type="submit">
-            enviar
-          </button>
+      <div className="container">
+        <div class="title">
+          <h1>Últimos Lançamentos</h1>
+          <h2>Filmes</h2>
         </div>
         <div className="lista-filmes">
           {movies.map((movie) => {
