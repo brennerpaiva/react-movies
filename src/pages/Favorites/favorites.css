@@ -1,41 +1,44 @@
 .fav {
-    max-width: 750px;
+    max-width: 680px;
     margin: 0 auto;
 }
 
 .fav img {
-    width: 180px;
+    width: 150px;
     height: 50px;
     object-fit: cover;
     border-radius: 6px 0px 0px 6px;
+    background-image: black;
+    -webkit-mask-image: linear-gradient(to left, transparent 20%, #000000 100%);
 }
 .fav h1 {
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
+    color: #e6e6e6;
 }
 
 .fav h3 {
     margin-top: 50px;
     margin-bottom: 30px;
     text-align: center;
+    color: #e6e6e6;
 }
 
 .fav span {
-    font-size: 18px;
-    font-weight: bold;    
+    font-size: 19px;
+    color: #e6e6e6;   
 }
 
 .fav ul li {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    text-align: center;
     align-items: center;
     margin-bottom: 14px;
-    /* padding: 6px 5px; */
     border-radius: 6px;
-
-    background-color: brown;
+    background-color: #424242;
 }
 
 .icons {
@@ -43,25 +46,25 @@
     justify-content: center;
     align-items: center;
     margin-right: 10px;
-    font-size: 19px;
 }
 
 .icons button {
     border: none;
     background: none;
-    font-size: 20px;
+    font-size: 22px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    color: #FF226F;
 }
 
 .icons a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 23px;
     text-decoration: none;
-    color: black;
+    color: #FF226F;
     margin-right: 15px;
 }

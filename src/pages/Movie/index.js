@@ -99,15 +99,22 @@ function Movie() {
           <h3>Sinopse</h3>
           <p>{movie.overview}</p>
           <ul key={movie.id}>
+            <li><strong>Avaliação:</strong> {movie.vote_average.toFixed(1)}/10</li>
             <li>
-              Genero: {movie.genres.map((genero) => genero.name).join(", ")}
+              <strong>Lançamento:</strong>{" "}
+              {new Date(movie.release_date).toLocaleDateString("pt-BR")}
             </li>
-            <li>Avaliação: {movie.vote_average.toFixed(1)}/10</li>
+            <li><strong>Orçamento:</strong> ${movie.budget.toLocaleString("en-US")}</li>
+            <li><strong>Receita:</strong> ${movie.revenue.toLocaleString("en-US")}</li>
             <li>
-              Produção: <img src={`https://image.tmdb.org/t/p/original/${movie.production_companies[0].logo_path}`}></img>
+              <strong>Genero:</strong> {movie.genres.map((genero) => genero.name).join(", ")}
             </li>
-            <li></li>
-            <li></li>
+            <li>
+              <strong>Produção:</strong>{" "}
+              {movie.production_companies
+                .map((production) => production.name)
+                .join(", ")}
+            </li>
           </ul>
           <div className="area-buttons">
             <button onClick={saveMovie}>Salvar</button>
