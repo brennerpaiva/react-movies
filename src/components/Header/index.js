@@ -5,7 +5,7 @@ import "./header.css";
 function Header() {
 
     const [valorInput, setValorInput] = useState("");
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     function handleChange(event) {
       setValorInput(event.target.value);
@@ -13,23 +13,21 @@ function Header() {
 
     function handleClick() {
 
-     if(!valorInput) return
+     if(!valorInput) return;
 
-    navigate(`/search?q=${valorInput}`)
-
-      console.log("O botão foi clicado e o valor do input é:", valorInput);
+    navigate(`/search?q=${valorInput}`);
+    setValorInput("");
     }
-
 
   return (
     <header>
       <div className="max-width">
         <Link className="logo" to="/">
-          React Movies
+          React <span>Movies</span>
         </Link>
         <div className="search">
           <input
-            id="meu-input"
+            id="input-movie"
             type="text"
             value={valorInput}
             onChange={handleChange}

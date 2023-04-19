@@ -1,15 +1,14 @@
 .fav {
-    max-width: 680px;
+    max-width: 650px;
     margin: 0 auto;
 }
 
 .fav img {
-    width: 150px;
+    width: 120px;
     height: 50px;
     object-fit: cover;
     border-radius: 6px 0px 0px 6px;
-    background-image: black;
-    -webkit-mask-image: linear-gradient(to left, transparent 20%, #000000 100%);
+    -webkit-mask-image: linear-gradient(to left, transparent 15%, #000000 100%);
 }
 .fav h1 {
     margin-top: 30px;

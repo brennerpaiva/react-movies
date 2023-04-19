@@ -21,6 +21,14 @@ header {
     cursor: pointer;
     color: #e6e6e6;
     font-weight: bold;
+    background-image: linear-gradient(to bottom, #d2d2d2, #ff5c95, #ff226f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo span{
+
 }
 
 .favorites {
@@ -47,6 +55,7 @@ header {
     border-radius: 20px;
     border: none;
     background-color: #999999;
+    color: #e6e6e6;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     outline: 0;
@@ -56,9 +65,6 @@ header {
 .search input::placeholder{
     color: #424242;
 }
-
-
-
 
 .search button {
     background: none;

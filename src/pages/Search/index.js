@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import api from "../../services/api";
 import { Link, useSearchParams} from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
 import Header from "../../components/Header";
 import "./search.css";
 
@@ -28,6 +29,9 @@ function Search() {
 
       setMovies(response.data.results.slice(0, 20));
       setLoading(false);
+      if (movies.length === 0) {
+        toast.error("Nenhum resultado encontrado!  :(");
+      }
     }
 
     searchMovies();
@@ -43,6 +47,10 @@ function Search() {
 
   return (
     <div className="container">
+      <div class="title">
+        <h1>Resultados para: {query.toUpperCase()}</h1>
+        <h2>Filmes</h2>
+      </div>
       <div className="lista-filmes">
         {movies.map((movie) => {
           return (
