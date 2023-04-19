@@ -27,10 +27,6 @@ header {
     -webkit-text-fill-color: transparent;
 }
 
-.logo span{
-
-}
-
 .favorites {
     font-weight: bold;
     cursor: pointer;
@@ -39,6 +35,11 @@ header {
     text-decoration: none;
     color: #e6e6e6;
     border-radius: 20px;
+    transition: all 1s ease;
+}
+
+.favorites:hover {
+    background-color: #ff226fa7;
 }
 
 .search {

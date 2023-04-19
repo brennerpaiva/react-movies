@@ -23,7 +23,7 @@ function Header() {
     <header>
       <div className="max-width">
         <Link className="logo" to="/">
-          React <span>Movies</span>
+          React Movies
         </Link>
         <div className="search">
           <input

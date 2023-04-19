@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    color: white;
 }
 
 .container {
@@ -38,15 +39,13 @@
 .lista-filmes article {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 270px;
+    width: 250px;
     max-height: 480px;
     background-color: #6e6e6e2e;
     color: #e6e6e6;
     border-radius: 10px;
     margin: 20px;
-    transition: all 0.5s ease;
-    
+    transition: all 0.5s ease; 
 }
 
 .lista-filmes article:hover {
@@ -56,27 +55,27 @@
 
 .lista-filmes strong {
     margin: 5px;
+    align-items: center;
     text-align: center;
-    font-size: 22px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
-    height: 90px;
+    height: 60px;
     padding: 10px 0;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .lista-filmes img{
-    
-    width: 270px;
-    max-width: 100%;
-    height: 670px;
+    height: 350px;
+    width: 100%;
     object-fit: cover;
     display: block;
 }
 
 .lista-filmes a {
-    display: flex;
     text-decoration: none;
     align-items: center;
+    display: flex;
     justify-content: center;
     background-color: #ff226fa7;
     color: #e6e6e6;

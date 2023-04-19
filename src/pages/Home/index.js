@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import api from "../../services/api";
 import { Link } from "react-router-dom";
-import './home.css'
+import "./home.css";
 
 //https://api.themoviedb.org/3/movie/now_playing?api_key=e230d70de46c8bc751c0436148455bde
 
