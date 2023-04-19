@@ -7,8 +7,11 @@
 }
 
 .container {
+    min-height: 85vh;
+    flex: 1 0 auto;
     max-width: 1300px;
     margin: 0 auto;
+    padding-bottom: 50px;
 }
 
 .container .title {

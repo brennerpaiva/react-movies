@@ -27,11 +27,9 @@ function Search() {
         },
       });
 
-      setMovies(response.data.results.slice(0, 20));
-      setLoading(false);
-      if (movies.length === 0) {
-        toast.error("Nenhum resultado encontrado!  :(");
-      }
+        setMovies(response.data.results.slice(0, 20));
+        setLoading(false);
+
     }
 
     searchMovies();

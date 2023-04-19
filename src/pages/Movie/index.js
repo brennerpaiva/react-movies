@@ -107,7 +107,7 @@ function Movie() {
             <li><strong>Orçamento:</strong> ${movie.budget.toLocaleString("en-US")}</li>
             <li><strong>Receita:</strong> ${movie.revenue.toLocaleString("en-US")}</li>
             <li>
-              <strong>Genero:</strong> {movie.genres.map((genero) => genero.name).join(", ")}
+              <strong>Gênero:</strong> {movie.genres.map((genero) => genero.name).join(", ")}
             </li>
             <li>
               <strong>Produção:</strong>{" "}

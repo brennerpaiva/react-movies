@@ -1,6 +1,7 @@
 .fav {
     max-width: 650px;
     margin: 0 auto;
+    min-height: 85vh;
 }
 
 .fav img {
