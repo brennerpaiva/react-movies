@@ -27,7 +27,7 @@ function Header() {
           <strong>REACT</strong>
           movies
         </Link>
-        <div class="nav">
+        <div className="nav">
           <div className="search">
             <input
               id="input-movie"

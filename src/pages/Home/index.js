@@ -41,7 +41,7 @@ function Home() {
 
     return (
       <div className="container">
-        <div class="title">
+        <div className="title">
           <h1>Últimos Lançamentos</h1>
           <h2>Filmes</h2>
         </div>

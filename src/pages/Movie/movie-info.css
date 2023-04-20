@@ -1,5 +1,4 @@
 .banner {
-    font-family: 'DM Sans', sans-serif;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -54,7 +53,6 @@
 
 
 .filme-info {
-    font-family: 'DM Sans', sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -122,7 +120,6 @@
     margin-right: 12px;
     padding: 10px 14px;
     font-size: 20px;
-    font-family: 'DM Sans', sans-serif;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;

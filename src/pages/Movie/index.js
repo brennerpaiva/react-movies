@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import api from "../../services/api";
 import "./movie-info.css";
 
@@ -33,9 +33,6 @@ function Movie() {
     }
     loadMovie();
 
-    return () => {
-      console.log("Componente desmontado");
-    };
   }, [id, navigate]);
 
   function saveMovie() {
@@ -66,7 +63,7 @@ function Movie() {
   }
 
   return (
-    <div class="teste">
+    <>
       <div className="banner">
         <div className="banner-info">
           <h1>{movie.title}</h1>
@@ -88,14 +85,14 @@ function Movie() {
         </div>
       </div>
       <div className="filme-info">
-        <div class="area-banner">
+        <div className="area-banner">
           <img
             src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}
             alt={movie.title}
           />
         </div>
 
-        <div class="area-info">
+        <div className="area-info">
           <h3>Sinopse</h3>
           <p>{movie.overview}</p>
           <ul key={movie.id}>
@@ -130,7 +127,7 @@ function Movie() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import api from "../../services/api";
 import { Link, useSearchParams} from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
-import Header from "../../components/Header";
 import "./search.css";
 
 
@@ -45,7 +43,7 @@ function Search() {
 
   return (
     <div className="container">
-      <div class="title">
+      <div className="title">
         <h1>Resultados para: {query.toUpperCase()}</h1>
         <h2>Filmes</h2>
       </div>

@@ -21,7 +21,6 @@
 .container .title h1 {
     font-weight: 400;
     font-size: 30px;
-    font-family: 'DM Sans', sans-serif;
 }
 .container .title h2 {
     font-weight: 700;
@@ -62,7 +61,6 @@
     justify-content: center;
     height: 60px;
     padding: 10px 0;
-    font-family: 'DM Sans', sans-serif;
 }
 
 .lista-filmes img{
@@ -83,7 +81,6 @@
     height: 40px;
     border-radius: 0 0px 10px 10px;
     transition: all 0.5s ease;
-    font-family: 'DM Sans', sans-serif;
 } 
 
 .lista-filmes a:hover {
