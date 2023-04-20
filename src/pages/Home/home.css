@@ -7,7 +7,7 @@
 }
 
 .container {
-    max-width: 1300px;
+    width: 1150px;
     margin: 0 auto;
     padding-bottom: 50px;
 }
@@ -16,7 +16,6 @@
     margin-top: 25px;
     justify-content: center;
     align-items: center;
-    margin-left: 20px;
     color: #e6e6e6;
 }
 .container .title h1 {
@@ -33,7 +32,7 @@
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
-    padding: 0 80px;
+    padding: 0 50px;
     margin-top: 20px;
 }
 
@@ -45,13 +44,13 @@
     background-color: #6e6e6e2e;
     color: #e6e6e6;
     border-radius: 10px;
-    margin: 20px;
+    margin: 15px;
     transition: all 0.5s ease; 
 }
 
 .lista-filmes article:hover {
     background-color: #464646;
-    box-shadow: 1px 1px 30px #ff226f60;
+    box-shadow: 1px 1px 30px #61c5b64f;
 }
 
 .lista-filmes strong {
@@ -78,14 +77,15 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    background-color: #ff226fa7;
+    background-color: #37A695;
     color: #e6e6e6;
     width: 100%;
     height: 40px;
     border-radius: 0 0px 10px 10px;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
+    font-family: 'DM Sans', sans-serif;
 } 
 
 .lista-filmes a:hover {
-    background-color: #ff226f;
+    background-color: #268765;
 }

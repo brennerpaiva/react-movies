@@ -1,7 +1,6 @@
 header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     width: 100%;
     height: 65px;
     background-color: #424242;
@@ -9,22 +8,37 @@ header {
 }
 
 .max-width {
-    width: 1300px;
+    width: 1200px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0px 10px;
 }
 
 .logo {
-    text-decoration: none;
-    font-size: 35px;
+    font-size: 40px;
+    font-family: 'DM Sans', sans-serif;
     cursor: pointer;
-    color: #e6e6e6;
-    font-weight: bold;
-    background-image: linear-gradient(to bottom, #d2d2d2, #ff5c95, #ff226f);
+    background-image: linear-gradient(to left, #ffffff, #48D9C3, #37A695);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.logo strong {
+    color: #37A695;
+}
+
+.logo ion-icon{
+    font-size: 30px;
+    color: #37A695;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
 }
 
 .favorites {
@@ -32,7 +46,7 @@ header {
     font-weight: bold;
     font-size: 17px;
     cursor: pointer;
-    background-color: #FF226F;
+    background-color: #37A695;
     padding: 10px 14px;
     text-decoration: none;
     color: #e6e6e6;
@@ -41,7 +55,7 @@ header {
 }
 
 .favorites:hover {
-    background-color: #ff226fa7;
+    background-color: #268765;
 }
 
 .search {
@@ -50,11 +64,12 @@ header {
     justify-content: center;
     background-color: #999999;
     border-radius: 20px;
+    margin-right: 10px;
 }
 
 .search input {
     width: 220px;
-    height: 35px;
+    
     font-size: 17px;
     font-family: 'DM Sans', sans-serif;
     border-radius: 20px;
@@ -72,7 +87,7 @@ header {
 
 .search button {
     background: none;
-    color: #FF226F;
+    color: #48D9C3;
     border: none;
     font-size: 30px;
     display: flex;

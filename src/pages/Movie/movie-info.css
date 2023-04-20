@@ -116,8 +116,8 @@
 
 .area-buttons button{
     color: #e6e6e6;
-    background-color: #FF226F;
-    border: 1px solid #FF226F;
+    background-color: #37A695;
+    border: 1px solid #37A695;
     border-radius: 20px;
     margin-right: 12px;
     padding: 10px 14px;
@@ -129,8 +129,8 @@
 }
 
 .area-buttons button:hover {
-    background-color: #ff226fa7;
-    border: 1px solid #ff226fa7;
+    background-color: #268765;
+    border: 1px solid #268765;
 }
 
 .area-buttons button a {

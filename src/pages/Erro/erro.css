@@ -5,10 +5,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: white;
 }
 
 .not-found h1 {
     font-size: 50px;
+    
 }
 
 .not-found a {

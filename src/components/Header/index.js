@@ -23,24 +23,27 @@ function Header() {
     <header>
       <div className="max-width">
         <Link className="logo" to="/">
-          React Movies
+          <ion-icon className="ico" name="logo-react"></ion-icon>
+          <strong>REACT</strong>
+          movies
         </Link>
-        <div className="search">
-          <input
-            id="input-movie"
-            type="text"
-            value={valorInput}
-            onChange={handleChange}
-            placeholder="Pesquise por um filme"
-          />
-          <button onClick={handleClick}>
-            <ion-icon name="search"></ion-icon>
-          </button>
+        <div class="nav">
+          <div className="search">
+            <input
+              id="input-movie"
+              type="text"
+              value={valorInput}
+              onChange={handleChange}
+              placeholder="Pesquise por um filme"
+            />
+            <button onClick={handleClick}>
+              <ion-icon name="search"></ion-icon>
+            </button>
+          </div>
+          <Link className="favorites" to="/favorites">
+            Meus Filmes
+          </Link>
         </div>
-
-        <Link className="favorites" to="/favorites">
-          Meus Filmes
-        </Link>
       </div>
     </header>
   );
