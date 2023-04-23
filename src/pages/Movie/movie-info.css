@@ -1,6 +1,6 @@
 .banner {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     height: 700px;
     width: 100%;
@@ -138,3 +138,25 @@
 .area-buttons button:hover a {
     color: white;
 }   
+
+@media(max-width: 1128px) {
+    .filme-info {
+        max-width: 90%;
+    }  
+}
+
+@media(max-width: 976px) {
+    .filme-info .area-info {
+        max-width: 60%;
+    }
+
+    .filme-info .area-info ul{
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-column-gap: 20px;  
+}
+}
+
