@@ -4,19 +4,19 @@ import "./header.css";
 
 function Header() {
 
-    const [valorInput, setValorInput] = useState("");
+    const [inputValue, setInputValue] = useState("");
     const navigate = useNavigate();
 
     function handleChange(event) {
-      setValorInput(event.target.value);
+      setInputValue(event.target.value);
     }
 
     function handleClick() {
 
-     if(!valorInput) return;
+     if (!inputValue) return;
 
-    navigate(`/search?q=${valorInput}`);
-    setValorInput("");
+    navigate(`/search?q=${inputValue}`);
+    setInputValue("");
     }
 
   return (
@@ -32,7 +32,7 @@ function Header() {
             <input
               id="input-movie"
               type="text"
-              value={valorInput}
+              value={inputValue}
               onChange={handleChange}
               placeholder="Pesquise por um filme"
             />
