@@ -28,6 +28,7 @@
 .fav span {
     font-size: 19px;
     color: #e6e6e6;   
+    padding: 0 7px;
 }
 
 .fav ul li {
@@ -67,4 +68,40 @@
     text-decoration: none;
     color: #37A695;
     margin-right: 15px;
+}
+
+@media(max-width: 680px) {
+    .fav{
+        max-width: 90%;
+    }
+
+    .fav span {
+    font-size: 15px; 
+    }
+}
+
+@media(max-width: 480px){
+    .fav h1 {
+        font-size: 25px;
+    }
+
+    .fav span {
+    font-size: 13px; 
+    }
+
+    .icons button {
+        font-size: 18px;
+    }
+
+    .icons a {
+        font-size: 19px;
+    }
+
+    .fav img {
+    width: 70px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px 0px 0px 6px;
+    -webkit-mask-image: linear-gradient(to left, transparent 15%, #000000 100%);
+}
 }
