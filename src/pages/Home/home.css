@@ -108,6 +108,15 @@
 
 @media (max-width: 900px) {
 
+    .container .title h1 {
+    font-weight: 400;
+    font-size: 25px;
+    }
+    .container .title h2 {
+        font-weight: 700;
+        font-size: 20px;
+    }
+
     .lista-filmes{
     grid-template-columns: repeat(3, 0fr);
     }
@@ -125,15 +134,6 @@
 }
 
 @media (max-width: 690px) {
-    
-    .container .title h1 {
-    font-weight: 400;
-    font-size: 25px;
-    }
-    .container .title h2 {
-        font-weight: 700;
-        font-size: 20px;
-    }
 
     .lista-filmes article {
     width: 150px;
@@ -176,17 +176,17 @@
     }
 
     .lista-filmes article {
-    width: 250px;
+    width: 200px;
     max-height: 480px;
 }
 
 .lista-filmes strong {
-    font-size: 18px;
+    font-size: 15px;
     height: 60px;
 }
 
 .lista-filmes img{
-    height: 350px;
+    height: 290px;
     width: 100%;
 }
 

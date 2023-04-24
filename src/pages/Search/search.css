@@ -10,10 +10,12 @@
     width: 1150px;
     margin: 0 auto;
     padding-bottom: 50px;
+    min-height: 85vh;
 }
 
 .container .title {
-    margin-top: 25px;
+    margin-top: 20px;
+    padding: 0 25px;
     justify-content: center;
     align-items: center;
     color: #e6e6e6;
@@ -85,4 +87,112 @@
 
 .lista-filmes a:hover {
     background-color: #268765;
+}
+
+@media (max-width: 1145px) {
+    .container {
+    max-width: 90%;
+    }
+
+    .container .title {
+    padding: 0;
+    }
+
+    .lista-filmes{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 0.3fr);
+    padding: 0px 30px;
+    margin-top: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .container .title h1 {
+    font-weight: 400;
+    font-size: 25px;
+    }
+    .container .title h2 {
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .lista-filmes{
+    grid-template-columns: repeat(3, 0fr);
+    }
+
+    .lista-filmes article {
+    width: 200px;
+    max-height: 400px;
+    margin: 15px;
+    }
+
+    .lista-filmes img{
+        height: 280px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 690px) {
+
+    .lista-filmes article {
+    width: 150px;
+    max-height: 280px;
+    margin: 15px;
+    }
+
+    .lista-filmes img{
+        height: 170px;
+        width: 100%;
+    }
+
+    .lista-filmes strong  {
+        font-size: 14px;
+    }
+
+    .lista-filmes a {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 530px) {
+    .lista-filmes{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 0fr);
+    }
+
+    .container {
+    max-width: 90%;
+    }
+}
+
+@media (max-width: 347px) {
+    .lista-filmes{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, 0fr);
+    }
+
+    .lista-filmes article {
+    width: 200px;
+    max-height: 480px;
+}
+
+.lista-filmes strong {
+    font-size: 15px;
+    height: 60px;
+}
+
+.lista-filmes img{
+    height: 290px;
+    width: 100%;
+}
+
+.lista-filmes a {
+    width: 100%;
+    height: 40px;
+} 
 }

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import api from "../../services/api";
 import { Link, useSearchParams} from "react-router-dom";
-import "../Home/home.css"
+import "./search.css"
 
 
 function Search() {
