@@ -23,5 +23,5 @@
 ### 🖥️ Linguagens e Ferramentas: 
 • <img width="20px" src="https://skillicons.dev/icons?i=reactjs" alt="testing library icon"/> React\
 • <img width="20px" src="https://skillicons.dev/icons?i=typescript" alt="typescript icon"/> JavaScript\
-• <img width="20px" src="https://skillicons.dev/icons?i=axios" alt="styled-components icon"/> Axios\
+• <img width="20px" src="![Uploading axios_logo_icon_168545.svg…]()" alt="styled-components icon"/> Axios\
 • <img width=20px src="https://skillicons.dev/icons?i=react"> React Icons
