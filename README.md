@@ -4,7 +4,7 @@
 
 ![banner](https://github.com/brennerpaiva/react-movies/assets/114958953/c5b7d8f4-ed47-4ee2-bb98-a87625169a69)
 
-## 🟢 Sobre: 
+## Sobre: 
 
 <br>
 
