@@ -14,7 +14,7 @@
 <br>
 
 ### 📌 Objetivos: 
-&nbsp; • Nesse desafio pude por em prática os conhecimentos sobre gerenciamento de estados utilizando o useState, aprender mais sobre o consumo de API utilizando o Axios e melhorar minhas habilidades em estilização. 
+&nbsp; • Nesse desafio pude por em prática os conhecimentos sobre gerenciamento de estados utilizando o useState, aprender mais sobre o consumo de API utilizando o Axios. Também pude testar minhas habilidades em estilização deixando o projeto totalmente responsivo. 
 
 <br>
 
