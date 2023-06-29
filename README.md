@@ -2,7 +2,7 @@
   <h1>React Movies 🎞️</h1>
 </div>
 
-![banner](https://github.com/brennerpaiva/react-movies/assets/114958953/a8f73d38-eb07-4fbe-b8c1-d976d4c12e39)
+![banner](https://github.com/brennerpaiva/react-movies/assets/114958953/3b34bf2d-9c08-4021-bdb5-494cc838d582)
 
 ## 🟢 Sobre: 
 
