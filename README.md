@@ -5,7 +5,6 @@
 ### 🗂️ O projeto: 
 &nbsp; • O React Movies permite aos usuários ver os últimos filmes lançados, pesquisar por títulos específicos, ver informações detalhadas sobre cada obra em páginas específicas. É possível salvar filmes desejados e gerenciar sua própria lista.
 
-<a href="reactmoviesproject.vercel.app/">Visualizar <a/>
 
 ![banner](https://github.com/brennerpaiva/react-movies/assets/114958953/c5b7d8f4-ed47-4ee2-bb98-a87625169a69)
 
